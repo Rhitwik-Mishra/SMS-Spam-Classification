@@ -1,6 +1,7 @@
 import nltk
 # ensure nltk data is available on fresh servers (Render / Deploy)
 nltk.download('punkt', quiet=True)
+nltk.download('punkt_tab', quiet=True)   # <--- fixes the Runtime LookupError you saw
 nltk.download('stopwords', quiet=True)
 
 import streamlit as st
