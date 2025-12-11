@@ -1,3 +1,8 @@
+import nltk
+# ensure nltk data is available on fresh servers (Render / Deploy)
+nltk.download('punkt', quiet=True)
+nltk.download('stopwords', quiet=True)
+
 import streamlit as st
 import pickle
 import nltk
