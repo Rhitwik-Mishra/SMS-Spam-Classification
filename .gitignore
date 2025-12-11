@@ -1,0 +1,33 @@
+# Virtual environments
+.venv/
+venv/
+env/
+__pycache__/
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Secrets / local settings
+.env
+*.env
+credentials.json
+
+# Optional: ignore large model files if you DON'T want them in git
+# Uncomment the following line to prevent committing .pkl model files:
+# *.pkl
