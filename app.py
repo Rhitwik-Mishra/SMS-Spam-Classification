@@ -38,8 +38,14 @@ def transform_text(text):
 
     return " ".join(y)
 
-tfidf=pickle.load(open('vectorizer.pkl','rb'))
-model=pickle.load(open('model.pkl','rb'))
+# --- load artifacts once ---
+with open('vectorizer.pkl', 'rb') as f:
+    tfidf = pickle.load(f)
+
+with open('model.pkl', 'rb') as f:
+    model = pickle.load(f)
+# -------------------------
+
 st.title("SMS Spam Classification")
 input_sms=st.text_input("Enter the message")
 
